@@ -1,0 +1,13 @@
+@media screen and (max-width: 660px) {
+  .banner {
+    .banner_img {
+      display: none;
+    }
+  }
+  .services {
+    flex-wrap: wrap;
+  }
+  .blur_green_section {
+    padding: 40px;
+  }
+}

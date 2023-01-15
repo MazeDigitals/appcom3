@@ -1,0 +1,36 @@
+.ant-layout-header {
+  margin-top: 30px;
+  padding-inline: 0 !important;
+  background: transparent !important;
+  z-index: 1;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menubtn {
+      background: $white_color;
+      .anticon {
+        color: $black_color;
+      }
+    }
+  }
+}
+.header_menu {
+  border-bottom: none;
+  background: transparent;
+  width: max-content;
+  display: flex;
+  .item {
+    color: $white_color;
+    height: 100%;
+    &:hover {
+      color: $green_color !important;
+    }
+  }
+}
+.mobile_drawer {
+  background: $dark_green !important;
+  .ant-drawer-close {
+    color: $white_color;
+  }
+}
