@@ -1,0 +1,29 @@
+.rating_card {
+  background: $white_color;
+  box-shadow: 0px 2px 24px rgba(79, 114, 181, 0.16);
+  border-radius: 6px;
+  padding: 20px 25px;
+  color: $black_color;
+  min-width: 300px;
+  p {
+    &.title {
+      padding-bottom: 15px;
+    }
+    &.medium_text {
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+  }
+  .flex {
+    gap: 5px;
+  }
+  .stars {
+    gap: 5px;
+  }
+  .star {
+    &.filled {
+      filter: brightness(0) saturate(100%) invert(65%) sepia(57%) saturate(719%)
+        hue-rotate(2deg) brightness(106%) contrast(97%);
+    }
+  }
+}

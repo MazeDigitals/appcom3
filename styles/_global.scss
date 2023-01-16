@@ -20,7 +20,6 @@ body {
 .container {
   padding: 0 4.5rem;
 }
-
 .button {
   padding: 17.8906px 35.7656px 17.7344px 34.0938px;
   max-width: 243.86px;
@@ -30,6 +29,9 @@ body {
   color: $black_color;
   font-weight: bold;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .light_btn {
@@ -46,7 +48,8 @@ body {
   box-shadow: inset 8.19265px 8.19265px 20.4816px rgba(40, 118, 94, 0.4);
   border-radius: 5.33333px;
 }
-p {
+p,
+.body_text {
   font-size: 1rem;
   margin-bottom: 0;
 }
@@ -62,6 +65,12 @@ h2 {
   font-weight: 700;
   line-height: 68px;
   letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
   margin-bottom: 0;
 }
 .heading {
@@ -86,6 +95,14 @@ h2 {
   font-size: 0.75rem;
   font-weight: 400;
 }
+.medium_text {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
 
 .flex {
   display: flex;
@@ -103,4 +120,15 @@ h2 {
 
 .text-center {
   text-align: center;
+}
+
+.blue_text {
+  color: $blue_color;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.gap-20 {
+  gap: 20px;
 }

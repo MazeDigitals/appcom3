@@ -1,0 +1,25 @@
+.service_card {
+  position: relative;
+  // min-width: 310px;
+  width: 315px;
+  background: $white_color;
+  border: 2px solid $green_color;
+  border-radius: 20px;
+  color: $black_color;
+  padding: 48px 25px 18px 24px;
+  text-align: left;
+  .service_img {
+    background: $white_color;
+    border: 2px solid $green_color;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    top: -20%;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
