@@ -1,0 +1,9 @@
+@media screen and (max-width: 960px) {
+  .ant-tabs {
+    .ant-tabs-nav {
+      .ant-tabs-nav-wrap {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

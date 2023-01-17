@@ -117,13 +117,24 @@ h3 {
 .flex_between {
   justify-content: space-between;
 }
+.flex_column {
+  flex-direction: column;
+}
 
 .text-center {
   text-align: center;
 }
-
+.align-items-center {
+  align-items: center;
+}
+.text-align-right {
+  text-align: right;
+}
 .blue_text {
   color: $blue_color;
+}
+.green_text {
+  color: $green_color;
 }
 .underline {
   text-decoration: underline;

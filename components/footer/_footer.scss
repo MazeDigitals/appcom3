@@ -1,3 +1,21 @@
 .footer {
   background: $dark_green;
+  padding: 100px 0 20px;
+  .footer_gap {
+    gap: 30px;
+  }
+  .footer_heading {
+    padding-bottom: 20px;
+  }
+  .footer_link {
+    color: $white_color;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $green_color;
+    }
+  }
+  .bottom_footer {
+    padding-top: 75px;
+  }
 }

@@ -7,3 +7,15 @@
   gap: 20px;
   // flex-wrap: wrap;
 }
+.technologies {
+  gap: 50px;
+  .technology {
+    color: $white_color;
+    img {
+      width: 60%;
+    }
+    p {
+      padding-top: 10px;
+    }
+  }
+}

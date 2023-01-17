@@ -1,0 +1,32 @@
+.ant-tabs-ink-bar {
+  height: 5px;
+  background: $green_color !important;
+}
+.ant-tabs {
+  .ant-tabs-nav {
+    &::before {
+      border-bottom: none;
+    }
+    .ant-tabs-nav-wrap {
+      justify-content: center;
+    }
+    .ant-tabs-tab {
+      margin: 0;
+      padding: 12px 30px;
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: $green_color !important;
+        }
+      }
+      .ant-tabs-tab-btn {
+        color: $white_color;
+        &:focus,
+        &:hover,
+        &:active {
+          color: $green_color !important;
+          outline: none;
+        }
+      }
+    }
+  }
+}

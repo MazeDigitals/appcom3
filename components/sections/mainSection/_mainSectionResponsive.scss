@@ -1,0 +1,43 @@
+@media screen and (max-width: 850px) {
+  .section {
+    padding: 40px 2.5rem;
+    &.spacing {
+      padding: 40px 2.5rem;
+    }
+    .ratings {
+      flex-wrap: wrap;
+    }
+    .services {
+      flex-wrap: wrap;
+      .service_card {
+        margin-bottom: 20px;
+      }
+    }
+    .line {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .case {
+      .case_flex {
+        flex-direction: column-reverse;
+        gap: 20px;
+        &.right {
+          flex-direction: column-reverse;
+        }
+        .case_image {
+          width: 100%;
+        }
+      }
+      .case_data {
+        width: 100%;
+        a {
+          align-self: center;
+        }
+      }
+    }
+    .technologies {
+      flex-wrap: wrap;
+    }
+  }
+}

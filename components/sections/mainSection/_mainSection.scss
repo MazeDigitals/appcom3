@@ -18,6 +18,12 @@
   &.dark_section {
     background: $background_color;
   }
+  &.semi_dark_section {
+    background: $dark_black;
+  }
+  &.dark_grey_section {
+    background: $dark_grey;
+  }
   &.white_section {
     background: $white_color;
     color: $black_color;
@@ -38,8 +44,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .image_text {
+    h2 {
+      padding-bottom: 20px;
+      width: 60vw;
+      margin: auto;
+    }
+  }
   .case {
-    .flex {
+    .case_flex {
       .case_image {
         width: 50%;
         text-align: right;
