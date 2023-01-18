@@ -102,8 +102,8 @@ const Home = () => {
         className="dark_top_section spacing"
         type="case"
         case_image_location="left"
-        case_image="/png/hictic.png"
-        case_image_logo="/png/hictic_logo.png"
+        case_image="/svg/klean.svg"
+        case_image_logo="/svg/klean_logo.svg"
         case_type="MOBILE APP"
         case_heading="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, dolor sit amet, consectetur"
         case_text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet,"
@@ -113,8 +113,8 @@ const Home = () => {
         className="green_top_left spacing"
         type="case"
         case_image_location="right"
-        case_image="/png/hictic.png"
-        case_image_logo="/png/hictic_logo.png"
+        case_image="/svg/game.svg"
+        case_image_logo="/svg/game_logo.svg"
         case_type="MOBILE APP"
         case_heading="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, dolor sit amet, consectetur"
         case_text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet,"
@@ -194,6 +194,22 @@ const Home = () => {
         className="bottom_dark_section spacing"
         heading="We develop enterprise-grade software solutions for businesses."
         type="slider"
+        children={[
+          {
+            comment:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, onsectetur adipiscing Lorem ipsum ",
+            name: "Karen Agresti",
+            designation: "Founder",
+            type: "Nomidate",
+          },
+          {
+            comment:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, ",
+            name: "Chrisopher",
+            designation: "Co-Founder",
+            type: "Nomidate",
+          },
+        ]}
       />
     </div>
   );

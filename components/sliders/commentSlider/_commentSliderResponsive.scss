@@ -1,0 +1,14 @@
+@media screen and (max-width: 960px) {
+  .comment_slider {
+    padding: 0 10px;
+    .slick-slide {
+      padding: 15px 15px 50px;
+    }
+    .slick-prev {
+      left: -20px;
+    }
+    .slick-next {
+      right: -20px;
+    }
+  }
+}

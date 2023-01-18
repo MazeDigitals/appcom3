@@ -1,3 +1,4 @@
+import CommentSlider from "@/components/sliders/commentSlider/CommentSlider";
 import Tab from "@/components/tabs/Tab";
 import { Button } from "antd";
 import Link from "next/link";
@@ -21,14 +22,6 @@ const MainSections = (props) => {
     case_link,
     tabs,
   } = props;
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
   return (
     <div className={`section ${className}`}>
@@ -73,14 +66,35 @@ const MainSections = (props) => {
       ) : type == "slider" ? (
         <div className="text-center">
           <h2>{heading}</h2>
-          <Slider {...settings}>
-            <div>
-              <h3>1</h3>
+          <CommentSlider
+            children={children?.map((item) => (
+              <div className="text-center">
+                <div className="flex flex_center flex_column gap-20">
+                  <h6 className="large_text">{item?.comment}</h6>
+                  <div>
+                    <h6 className="large_text">
+                      {item?.name}, {item?.designation}
+                    </h6>
+                    <p>{item?.type}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          />
+          <div className="flex flex_center align-items-center gap-20">
+            <div className="flex flex_center gap-5">
+              <img src="/svg/logo_small.svg" />
+              <p className="small_text bold green_text">
+                4.8 Rating on Trustpilot
+              </p>
             </div>
             <div>
-              <h3>2</h3>
+              <img src="/svg/vertical_bar.svg" />
             </div>
-          </Slider>
+            <div>
+              <p className="bold">Top app developers</p>
+            </div>
+          </div>
         </div>
       ) : tabs ? (
         <div className="text-center">

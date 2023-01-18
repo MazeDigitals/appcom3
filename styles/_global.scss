@@ -79,6 +79,12 @@ h3 {
   line-height: 40px;
   margin-bottom: 0;
 }
+.small_heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+}
 .subhead {
   font-size: 1.25rem;
   font-weight: 400;
@@ -91,17 +97,20 @@ h3 {
   line-height: 30px;
   margin-bottom: 0;
 }
-.small_text {
-  font-size: 0.75rem;
-  font-weight: 400;
-}
 .medium_text {
   font-size: 0.875rem;
+  font-weight: 400;
+}
+.small_text {
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .bold {
   font-weight: 600;
+}
+.full_bold {
+  font-weight: 800;
 }
 
 .flex {
@@ -140,6 +149,34 @@ h3 {
   text-decoration: underline;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
 .gap-20 {
   gap: 20px;
+}
+
+.input_box {
+  background: $white_color;
+  border: 1px solid $light_bg;
+  border-radius: 4px;
+  color: $light_text;
+  padding: 8px 15px;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid $green_color;
+    outline: none;
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: $light_text;
+  }
+}
+
+.textarea {
+  resize: none;
 }

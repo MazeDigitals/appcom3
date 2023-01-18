@@ -5,10 +5,19 @@
 @import "./footer/footerResponsive";
 
 @import "./banner/mainBanner/mainBanner";
+@import "./banner/mainBanner/mainBannerResponsive";
+
 @import "./cards/ratingCard/ratingCard";
+
 @import "./cards/serviceCard/serviceCard";
+
 @import "./sections/mainSection/mainSection";
 @import "./sections/mainSection/mainSectionResponsive";
+
 @import "./tabs/tab";
 @import "./tabs/tabResponsive";
+
 @import "./sliders/commentSlider/commentSlider";
+@import "./sliders/commentSlider/commentSliderResponsive";
+
+@import "./form/quoteForm/quoteForm.scss";

@@ -1,0 +1,15 @@
+.comment_slider {
+  padding: 0 70px;
+  .slick-slide {
+    padding: 15px 80px 50px;
+    p {
+      padding-top: 5px;
+    }
+  }
+  .slick-prev {
+    left: 45px;
+  }
+  .slick-next {
+    right: 45px;
+  }
+}
