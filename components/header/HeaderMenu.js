@@ -10,16 +10,16 @@ const HeaderMenu = () => {
       // mode="horizontal"
       overflowedIndicator={false}
     >
-      <Link href="#">
+      <Link href="/about">
         <Menu.Item className="item small_text">About</Menu.Item>
       </Link>
-      <Link href="#">
+      <Link href="/services">
         <Menu.Item className="item small_text">Services</Menu.Item>
       </Link>
-      <Link href="#">
+      <Link href="/portfolio">
         <Menu.Item className="item small_text">Portfolio</Menu.Item>
       </Link>
-      <Link href="#">
+      <Link href="/case-studies">
         <Menu.Item className="item small_text">Case Studies</Menu.Item>
       </Link>
       <Link href="#">

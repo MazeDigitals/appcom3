@@ -23,8 +23,12 @@
   .item {
     color: $white_color;
     height: 100%;
+    &.ant-menu-item-selected {
+      background-color: transparent;
+    }
     &:hover {
       color: $green_color !important;
+      background-color: transparent !important;
     }
   }
 }

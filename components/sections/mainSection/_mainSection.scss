@@ -31,8 +31,17 @@
       border: none;
     }
   }
+  &.green_left {
+    background-image: url("/png/green_left.png") !important;
+  }
+  &.green_top_left_right {
+    background-image: url("/png/green_top_left_right.png") !important;
+  }
+  &.green_bottom_left_top_right {
+    background-image: url("/png/green_bottom_left_top_right.png") !important;
+  }
   &.green_top_left_bottom_right {
-    background-image: url("/png/green_top_left_bottom_right.png");
+    background-image: url("/png/green_top_left_bottom_right.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -77,6 +86,15 @@
         width: 92px;
         height: 92px;
       }
+    }
+  }
+  .client_review {
+    padding-top: 50px;
+    .review_count {
+      padding-right: 50px;
+    }
+    .total_reviews {
+      padding-left: 20px;
     }
   }
 }

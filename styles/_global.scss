@@ -158,6 +158,9 @@ h3 {
 .gap-20 {
   gap: 20px;
 }
+.gap-30 {
+  gap: 30px;
+}
 
 .input_box {
   background: $white_color;
@@ -179,4 +182,59 @@ h3 {
 
 .textarea {
   resize: none;
+}
+
+.letter_spacing {
+  letter-spacing: 2.8px;
+}
+.text-align-center {
+  text-align: center;
+}
+.side_top_spacing {
+  padding: 40px 40px 20px;
+}
+.partner .heading {
+  padding: 0 40px 30px;
+}
+.partner .subhead {
+  font-size: 1.2rem;
+  line-height: 33px;
+  padding: 0 10px;
+}
+.image_layout {
+  padding: 50px 0;
+}
+.image_layout img {
+  width: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+.text-left {
+  text-align: left;
+}
+.image_layout .text-left {
+  padding-top: 30px;
+}
+.image_layout .text-left p {
+  line-height: 28px;
+}
+.white_bg {
+  background: $white_color;
+  color: $black_color;
+  padding: 40px 30px;
+}
+.white_bg .subhead {
+  padding-top: 10px;
+  font-weight: bold;
+}
+.avatar img {
+  padding-bottom: 15px;
+}
+.avatars {
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.flex_wrap {
+  flex-wrap: wrap;
 }

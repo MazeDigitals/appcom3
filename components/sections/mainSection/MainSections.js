@@ -41,13 +41,13 @@ const MainSections = (props) => {
               <img src={case_image} />
             </div>
             <div className="case_data flex">
-              <img src={case_image_logo} />
+              {case_image_logo && <img src={case_image_logo} />}
               <h6 className="subhead">{case_type}</h6>
               <h3>{case_heading}</h3>
               <h6 className="subhead">{case_text}</h6>
-              <Link href={case_link}>
+              {case_link&& <Link href={case_link}>
                 <Button className="button green_btn">view case study</Button>
-              </Link>
+              </Link>}
             </div>
           </div>
         </div>
@@ -66,6 +66,7 @@ const MainSections = (props) => {
       ) : type == "slider" ? (
         <div className="text-center">
           <h2>{heading}</h2>
+          {subheading && <h5 className="large_text">{subheading}</h5>}
           <CommentSlider
             children={children?.map((item) => (
               <div className="text-center">
@@ -78,6 +79,17 @@ const MainSections = (props) => {
                     <p>{item?.type}</p>
                   </div>
                 </div>
+                {item?.review && 
+                  <div className="client_review flex flex_center gap-20">
+                    <div className="flex flex_center gap-10">
+                      <img src={"/svg/review.svg"} />
+                      <p className="body_text review_count">{item?.review}</p>
+                    </div>
+                    <div className="flex flex_center">
+                      |<p className="body_text total_reviews">{item?.total_reviews} REVIEWS</p>
+                    </div>
+                  </div>
+                }
               </div>
             ))}
           />

@@ -4,7 +4,7 @@ import { Button, Col, Row } from "antd";
 import QuoteForm from "@/components/form/quoteForm/QuoteForm";
 
 const MainBanner = (props) => {
-  const { bg_image, title, text, link } = props;
+  const { bg_image, title, text, link, side_img, align } = props;
 
   const [showQuote, setShowQuote] = useState("hide");
   const openQuote = () => {
@@ -14,9 +14,10 @@ const MainBanner = (props) => {
     setShowQuote("hide");
   };
   return (
-    <div className="banner">
+    <div className={`banner ${align == "center" && "center_text"}`}>
       <div className="container">
         <img src={bg_image} className="banner_img" />
+        <Row>
         {showQuote === "hide" ? (
           <div className="quote_btn" onClick={openQuote}>
             <p className="medium_text full_bold">GET QUOTE</p>
@@ -33,21 +34,47 @@ const MainBanner = (props) => {
             </div>
           </div>
         )}
-        <Col md={12}>
-          <div className="banner_content">
+        {align == "center" ? 
+        <Col md={24}>
+          <div className="banner_content center">
             <div>
               <h1>
                 <div dangerouslySetInnerHTML={{ __html: title }} />
               </h1>
               <h5 className="large_text">{text}</h5>
             </div>
-            <Link href={link}>
+            {link && <Link href={link}>
               <Button className="button green_btn mt-2">
                 Let's Get Started
               </Button>
-            </Link>
+            </Link>}
           </div>
         </Col>
+        :
+        <>
+          <Col md={10}>
+            <div className="banner_content">
+              <div>
+                <h1>
+                  <div dangerouslySetInnerHTML={{ __html: title }} />
+                </h1>
+                <h5 className="large_text">{text}</h5>
+              </div>
+              {link && <Link href={link}>
+                <Button className="button green_btn mt-2">
+                  Let's Get Started
+                </Button>
+              </Link>}
+            </div>
+          </Col>
+          {side_img && 
+            <Col md={{span: 12, offset:2}}>
+              <img className="banner_side_img" src={side_img}/>
+            </Col>
+          }
+        </>
+        }
+        </Row>
       </div>
     </div>
   );
