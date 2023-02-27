@@ -1,6 +1,7 @@
 .section {
   padding: 40px 4.5rem;
-  &.spacing {
+  background-repeat: no-repeat;
+    &.spacing {
     padding: 80px 4.5rem;
   }
   &.blur_green_section {
@@ -17,6 +18,9 @@
 
   &.dark_section {
     background: $background_color;
+  }
+  &.dark_black_section {
+    background: $dark_black;
   }
   &.semi_dark_section {
     background: $dark_black;
@@ -36,6 +40,13 @@
   }
   &.green_top_left_right {
     background-image: url("/png/green_top_left_right.png") !important;
+  }
+  &.green_top_left_opacity {
+    background-image: url("/png/green_top_left_opacity.png") !important;
+  }
+  &.green_right_bottom {
+    background-image: url("/png/green_right_bottom.png") !important;
+    background-size: cover;
   }
   &.green_bottom_left_top_right {
     background-image: url("/png/green_bottom_left_top_right.png") !important;
@@ -58,6 +69,18 @@
       padding-bottom: 20px;
       width: 60vw;
       margin: auto;
+    }
+  }
+  .simpleSection {
+    .subhead {
+      padding-top: 10px;
+    }
+  }
+  .white_bg {
+    padding: 20px 10px;
+    &.demand {
+      width: 263px;
+      height: 145px;
     }
   }
   .case {

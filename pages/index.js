@@ -21,58 +21,52 @@ const Home = () => {
         heading="Services we can help you with"
         subheading="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem <br>
             ipsum dolor sit amet, consectetur adipiscing"
-        children={
-          <div className="services flex flex_center">
-            <ServiceCard
-              title="Web App"
-              image="/png/web_app_service.png"
-              link="#"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
-            />
-            <ServiceCard
-              title="Mobile App"
-              image="/png/mobile_app_service.png"
-              link="#"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
-            />
-            <ServiceCard
-              title="Blockchain"
-              image="/png/blockchain_service.png"
-              link="#"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
-            />
-            <ServiceCard
-              title="MVP"
-              image="/png/web_app_service.png"
-              link="#"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
-            />
-          </div>
-        }
+        type="service"
+        children={[
+          {
+            title: "Web App",
+            image:"/png/web_app_service.png",
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
+          },
+          {
+            title: "Mobile App",
+            image:"/png/mobile_app_service.png",
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
+          },
+          {
+            title: "Blockchain",
+            image:"/png/blockchain_service.png",
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
+          },
+          {
+            title: "MVP",
+            image:"/png/web_app_service.png",
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor s Lorem ipsum dolor sit amet"
+          },
+        ]}
       />
       <MainSections
         className="black_green_section"
         heading="Achievements"
         subheading="Lorem ipsum dolor sit amet, consectetur adipiscing Lorem <br>
         ipsum dolor sit amet, consectetur adipiscing"
-        children={
-          <div className="ratings flex flex_center gap-20">
-            <RatingCard
-              title="Maze Digital is rated Excellent"
-              stars="5"
-              stars_color="green"
-              number_of_reviews="456"
-              review_type="trustpilot"
-            />
-            <RatingCard
-              title="Maze Digital is rated with 4.8 Stars"
-              stars="4"
-              stars_color="yellow"
-              number_of_reviews="152"
-              review_type="google"
-            />
-          </div>
-        }
+        type="rating"
+        children={[
+          {
+            title:"Maze Digital is rated Excellent",
+            stars:"5",
+            stars_color:"green",
+            number_of_reviews:"456",
+            review_type:"trustpilot"
+          },
+          {
+            title:"Maze Digital is rated with 4.8 Stars",
+            stars:"4",
+            stars_color:"yellow",
+            number_of_reviews:"152",
+            review_type:"google"
+          }
+        ]}
       />
       <MainSections
         className="white_section spacing"

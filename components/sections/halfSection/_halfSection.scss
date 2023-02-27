@@ -1,0 +1,11 @@
+.image_half {
+    &.right {
+        flex-direction: row-reverse;
+    }
+    > div {
+        flex: 1 0 50%;
+        &.half_description {
+            flex: 1 0 45%;
+        }
+    }
+}

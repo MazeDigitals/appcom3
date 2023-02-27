@@ -1,3 +1,5 @@
+import RatingCard from "@/components/cards/ratingCard/RatingCard";
+import ServiceCard from "@/components/cards/serviceCard/ServiceCard";
 import CommentSlider from "@/components/sliders/commentSlider/CommentSlider";
 import Tab from "@/components/tabs/Tab";
 import { Button } from "antd";
@@ -21,6 +23,8 @@ const MainSections = (props) => {
     case_text,
     case_link,
     tabs,
+    width,
+    miniHeading
   } = props;
 
   return (
@@ -117,11 +121,53 @@ const MainSections = (props) => {
         </div>
       ) : (
         <div className="text-center">
-          <h2>{heading}</h2>
-          <h5 className="subhead">
-            <div dangerouslySetInnerHTML={{ __html: subheading }} />
-          </h5>
-          {children}
+          {miniHeading && <div className="miniHeadingSection">
+            <p className="green_text large_text">{miniHeading}</p>
+          </div>}
+          <div className="simpleSection" style={{width: width ? width : "100%", margin: "auto"}}>
+            <h2>{heading}</h2>
+            <h5 className="subhead">
+              <div dangerouslySetInnerHTML={{ __html: subheading }} />
+            </h5>
+          </div>
+          {type == "service" ? 
+          <div className="services flex flex_center">
+            {children?.map((item, index)=> (
+              <ServiceCard
+                title={item?.title}
+                image={item?.image}
+                link={item?.link ? item?.link : "#"}
+                text={item?.text}
+              />
+            ))}
+          </div>
+          :
+          type == "rating" ? 
+          <div className='ratings flex flex_center gap-20'>
+              {children?.map((item,index)=> (
+                <RatingCard
+                  title={item?.title}
+                  stars={item?.stars}
+                  stars_color={item?.stars_color}
+                  number_of_reviews={item?.number_of_reviews}
+                  review_type={item?.review_type}
+                />
+              ))}
+          </div>
+          :
+          type == "child" &&
+          <div className="top_spacing">
+            <hr />
+            <div className='flex flex_center gap-20 flex_between side_top_spacing'>
+                {children?.map((item,index)=> (
+                    <div className='text-align-center white_bg demand' key={index}>
+                        <h2>{item?.heading}%</h2>
+                        <p className='medium_text letter_spacing'>{item?.text}</p>
+                    </div>
+                ))}
+            </div>
+          </div>
+          }
         </div>
       )}
     </div>
